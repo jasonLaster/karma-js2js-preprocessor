@@ -1,6 +1,6 @@
 {
   "name": "karma-js2js-preprocessor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Karma plugin. Convert JS files into JS variables.",
   "main": "src/karma-js2js-preprocessor.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "karma-plugin",
-    "karma-preprocessor",
+    "karma-preprocessor"
   ],
   "author": "Jason Laster <jason.laster.11@gmail.com>",
   "dependencies": {},

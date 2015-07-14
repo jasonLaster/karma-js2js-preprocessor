@@ -32,19 +32,10 @@ module.exports = function(config) {
 This preprocessor converts JS files into js source functions and publishes them in the global `window.__fixtures__`.
 
 ```js
-window.__fixtures__['es6/arrow_functions/example_1'] = function() {/*(a ...b) => 0*/}
-window.__fixtures__['es6/arrow_functions/example_rest_1'] = function() {/*(a,b,...c) => 0;*/}
+window.__fixtures__['es6/arrow_functions/example_1'] = "(a ...b) => 0";
+window.__fixtures__['es6/arrow_functions/example_rest_1'] = "(a,b,...c) => 0;";
 ```
 
-after unwrapping the source functions.
-
-```js
-
-unwrapJsFixtures();
-
-window.__fixtures__['es6/arrow_functions/example_1'] = "(a ...b) => 0"
-window.__fixtures__['es6/arrow_functions/example_rest_1'] = "(a,b,...c) => 0;"
-```
 
 
 ----

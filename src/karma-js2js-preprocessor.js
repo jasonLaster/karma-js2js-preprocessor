@@ -31,8 +31,7 @@ var TEMPLATE = '' +
   'window.__fixtures__[\'%s\'] = %s';
 
 var escapeContent = function(content) {
-  var newContent = content.replace(/\*\//g, '<end>');
-  return "function(){/*"+ newContent + "*/};";
+  return JSON.stringify(content);
 };
 
 
